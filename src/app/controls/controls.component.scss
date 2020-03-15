@@ -1,0 +1,30 @@
+form {
+  margin: 50px auto;
+  width: 900px;
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.input-wrapper {
+  width: 30%;
+}
+
+button {
+  margin-left: 20px;
+  width: 150px;
+}
+
+.empty-request-info {
+  border: 1px solid tomato;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+@media (max-width: 650px) {
+  input {
+    width: 90%;
+  }
+}

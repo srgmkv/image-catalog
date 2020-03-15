@@ -1,0 +1,20 @@
+<form #form="ngForm" class="">
+  <div class="input-wrapper">
+    <input type="text" class="form-control" placeholder="Enter search request" [(ngModel)]="searchTag" name="searchInput">
+    <div class="empty-request-info" *ngIf="isRequestEmpty">
+      Заполните поле 'тег'
+    </div>
+  </div>
+  <button type="button" class="btn btn-primary"
+          (click)="searchByTag()"
+          [disabled]="isDataLoading"
+          [ngStyle]="{'cursor' : isDataLoading ? 'wait' : 'pointer'}"
+  >{{isDataLoading ? 'Загрузка' : 'Загрузить'}}</button>
+  <button type="button" class="btn btn-warning" (click)="clearInput()" >Очистить</button>
+  <button type="button" class="btn btn-success"
+          [disabled]="!searchTag"
+          (click)="toggleGroupingStatus()">{{isListGrouped ? 'Разгруппировать' : 'Группироовать'}}</button>
+</form>
+
+
+

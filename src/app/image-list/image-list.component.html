@@ -1,0 +1,9 @@
+
+<div class="wrapper">
+  <div *ngFor="let image of images" class="image" >
+    <div class="click-interceptor" (click)="handleClick(image.searchedByTag)"></div>
+    <iframe [src]="image.url" width="200" frameBorder="0">
+        </iframe>
+  </div>
+</div>
+
