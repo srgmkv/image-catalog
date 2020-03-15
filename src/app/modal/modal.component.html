@@ -1,0 +1,9 @@
+<div class="modal" [ngStyle]="{display: show ? 'block' : 'none'}">
+  <div class="overlay" (click)="handleCloseModal()"></div>
+  <div class="modal_content">
+    <ng-content></ng-content>
+    <button title="Close" class="close_modal" (click)="handleCloseModal()">
+      X
+    </button>
+  </div>
+</div>

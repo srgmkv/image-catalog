@@ -1,0 +1,18 @@
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  max-width: 80%;
+  margin: 0 auto 30px;
+  border-bottom: 2px solid green;
+}
+
+app-image-list {
+  max-width: 100%;
+}
+.tag-title {
+  color: white;
+  padding: 5px 15px;
+  background: green;
+  border-radius: 6px;
+}
